@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <form action="/login" method="POST">
         <div class="container">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username">
@@ -18,13 +18,12 @@
             <button type="submit">Login</button>
         </div>
         <script>
-            if(document.location.hash === '#unauthorized') {
-         document.write('<div class=“unauthorized”>Invalid Username or Password</div>');
-            } else if(document.location.hash === '#error') {
-         document.write('<div class=“error”>An error has occured</div>');
+            if (document.location.hash === '#unauthorized') {
+                document.write('<div class="unauthorized">Invalid Username or Password</div>');
+            } else if (document.location.hash === '#error') {
+                document.write('<div class="error">An error has occurred</div>');
             }
-          </script>
-         
+        </script>
       </form>
 </body>
 </html>

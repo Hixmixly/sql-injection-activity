@@ -32,6 +32,8 @@ app.get('/', (req, res) => {
 
 // Handle login submissions
 app.post('/login', (req, res) => {
+	console.log('Login POST route hit');
+
   const username = req.body.username;
   const password = req.body.password;
 
